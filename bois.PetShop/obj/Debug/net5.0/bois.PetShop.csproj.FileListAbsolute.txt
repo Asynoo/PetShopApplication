@@ -1,0 +1,16 @@
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.exe
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.deps.json
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.runtimeconfig.json
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.runtimeconfig.dev.json
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.dll
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\ref\bois.PetShop.dll
+C:\CsharpWork\PetShopApplication\bois.PetShop\bin\Debug\net5.0\bois.PetShop.pdb
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.csproj.AssemblyReference.cache
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.AssemblyInfoInputs.cache
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.AssemblyInfo.cs
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.csproj.CoreCompileInputs.cache
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.dll
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\ref\bois.PetShop.dll
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.pdb
+C:\CsharpWork\PetShopApplication\bois.PetShop\obj\Debug\net5.0\bois.PetShop.genruntimeconfig.cache
