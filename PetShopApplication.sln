@@ -2,6 +2,16 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShop", "bois.PetShop\bois.PetShop.csproj", "{AF28302D-DE26-4253-8D2C-E148E49F36BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FC7F00A0-DE29-4D92-9978-123034DB891F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{690192C2-C812-4B91-8C03-5B6CF260A5BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{B9018D00-5DA6-45CA-98EC-DBF6588AB60D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.Domain", "bois.PetShopApplication.Domain\bois.PetShopApplication.Domain.csproj", "{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.Core", "bois.PetShopApplication.Core\bois.PetShopApplication.Core.csproj", "{E6560F17-DE19-4614-A26A-2DBA14245976}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +22,18 @@ Global
 		{AF28302D-DE26-4253-8D2C-E148E49F36BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF28302D-DE26-4253-8D2C-E148E49F36BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF28302D-DE26-4253-8D2C-E148E49F36BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6560F17-DE19-4614-A26A-2DBA14245976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6560F17-DE19-4614-A26A-2DBA14245976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6560F17-DE19-4614-A26A-2DBA14245976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6560F17-DE19-4614-A26A-2DBA14245976}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF28302D-DE26-4253-8D2C-E148E49F36BA} = {B9018D00-5DA6-45CA-98EC-DBF6588AB60D}
+		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6} = {FC7F00A0-DE29-4D92-9978-123034DB891F}
+		{E6560F17-DE19-4614-A26A-2DBA14245976} = {FC7F00A0-DE29-4D92-9978-123034DB891F}
 	EndGlobalSection
 EndGlobal
