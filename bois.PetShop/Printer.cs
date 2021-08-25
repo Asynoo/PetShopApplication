@@ -8,7 +8,7 @@ namespace bois.PetShop
 
         public Printer(IPetService service)
         {
-            throw new System.NotImplementedException();
+            _service = service;
         }
 
         public void start()

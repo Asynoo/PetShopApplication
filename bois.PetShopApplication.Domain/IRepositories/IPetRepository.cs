@@ -5,6 +5,8 @@ namespace bois.PetShopApplication.Domain.IRepositories
 {
     public interface IPetRepository
     {
-        IEnumerable<Pet> ReadPets();
+        Pet Add(Pet pet);
+
+        List<Pet> FindAll();
     }
 }

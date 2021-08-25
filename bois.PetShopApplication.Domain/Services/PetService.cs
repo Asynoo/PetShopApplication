@@ -7,14 +7,21 @@ namespace bois.PetShopApplication.Domain.Services
 {
     public class PetService : IPetService
     {
+        private IPetRepository _repo;
+        
         public PetService(IPetRepository repo)
         {
-            throw new System.NotImplementedException();
+            _repo = repo;
         }
 
-        public List<Pet> GetPets()
-        {   
-            throw new System.NotImplementedException();
+        public Pet Create(Pet pet)
+        {
+            return _repo.Add(pet);
+        }
+
+        public List<Pet> ReadAll()
+        {
+            return _repo.FindAll();
         }
     }
 }

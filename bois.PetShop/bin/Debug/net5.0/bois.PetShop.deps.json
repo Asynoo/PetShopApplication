@@ -7,14 +7,69 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "bois.PetShop/1.0.0": {
+        "dependencies": {
+          "bois.PetShopApplication.Core": "1.0.0",
+          "bois.PetShopApplication.DataAccess": "1.0.0",
+          "bois.PetShopApplication.Domain": "1.0.0",
+          "bois.PetShopApplication.SQL": "1.0.0"
+        },
         "runtime": {
           "bois.PetShop.dll": {}
+        }
+      },
+      "bois.PetShopApplication.Core/1.0.0": {
+        "runtime": {
+          "bois.PetShopApplication.Core.dll": {}
+        }
+      },
+      "bois.PetShopApplication.DataAccess/1.0.0": {
+        "dependencies": {
+          "bois.PetShopApplication.Domain": "1.0.0"
+        },
+        "runtime": {
+          "bois.PetShopApplication.DataAccess.dll": {}
+        }
+      },
+      "bois.PetShopApplication.Domain/1.0.0": {
+        "dependencies": {
+          "bois.PetShopApplication.Core": "1.0.0"
+        },
+        "runtime": {
+          "bois.PetShopApplication.Domain.dll": {}
+        }
+      },
+      "bois.PetShopApplication.SQL/1.0.0": {
+        "dependencies": {
+          "bois.PetShopApplication.Domain": "1.0.0"
+        },
+        "runtime": {
+          "bois.PetShopApplication.SQL.dll": {}
         }
       }
     }
   },
   "libraries": {
     "bois.PetShop/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bois.PetShopApplication.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bois.PetShopApplication.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bois.PetShopApplication.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bois.PetShopApplication.SQL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
