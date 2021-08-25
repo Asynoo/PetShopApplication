@@ -5,4 +5,11 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\bois.PetShopApplication.Core\bois.PetShopApplication.Core.csproj" />
+      <ProjectReference Include="..\bois.PetShopApplication.DataAccess\bois.PetShopApplication.DataAccess.csproj" />
+      <ProjectReference Include="..\bois.PetShopApplication.Domain\bois.PetShopApplication.Domain.csproj" />
+      <ProjectReference Include="..\bois.PetShopApplication.SQL\bois.PetShopApplication.SQL.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.Core", "bois.PetShopApplication.Core\bois.PetShopApplication.Core.csproj", "{E6560F17-DE19-4614-A26A-2DBA14245976}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.DataAccess", "bois.PetShopApplication.DataAccess\bois.PetShopApplication.DataAccess.csproj", "{19A83CC9-64D4-4E31-A079-A02855D37179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bois.PetShopApplication.SQL", "bois.PetShopApplication.SQL\bois.PetShopApplication.SQL.csproj", "{0DAB193C-2A48-4B95-AE6D-23053100136D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +34,20 @@ Global
 		{E6560F17-DE19-4614-A26A-2DBA14245976}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6560F17-DE19-4614-A26A-2DBA14245976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6560F17-DE19-4614-A26A-2DBA14245976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A83CC9-64D4-4E31-A079-A02855D37179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A83CC9-64D4-4E31-A079-A02855D37179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A83CC9-64D4-4E31-A079-A02855D37179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A83CC9-64D4-4E31-A079-A02855D37179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DAB193C-2A48-4B95-AE6D-23053100136D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DAB193C-2A48-4B95-AE6D-23053100136D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DAB193C-2A48-4B95-AE6D-23053100136D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DAB193C-2A48-4B95-AE6D-23053100136D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AF28302D-DE26-4253-8D2C-E148E49F36BA} = {B9018D00-5DA6-45CA-98EC-DBF6588AB60D}
 		{54EBFBD8-D8DC-4F99-9C4B-277A1860F4E6} = {FC7F00A0-DE29-4D92-9978-123034DB891F}
 		{E6560F17-DE19-4614-A26A-2DBA14245976} = {FC7F00A0-DE29-4D92-9978-123034DB891F}
+		{19A83CC9-64D4-4E31-A079-A02855D37179} = {690192C2-C812-4B91-8C03-5B6CF260A5BA}
+		{0DAB193C-2A48-4B95-AE6D-23053100136D} = {690192C2-C812-4B91-8C03-5B6CF260A5BA}
 	EndGlobalSection
 EndGlobal

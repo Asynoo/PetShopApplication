@@ -12,19 +12,6 @@
           "bin/placeholder/bois.PetShopApplication.Core.dll": {}
         }
       },
-      "bois.PetShopApplication.DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "bois.PetShopApplication.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/bois.PetShopApplication.DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/bois.PetShopApplication.DataAccess.dll": {}
-        }
-      },
       "bois.PetShopApplication.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -37,19 +24,6 @@
         "runtime": {
           "bin/placeholder/bois.PetShopApplication.Domain.dll": {}
         }
-      },
-      "bois.PetShopApplication.SQL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "bois.PetShopApplication.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/bois.PetShopApplication.SQL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/bois.PetShopApplication.SQL.dll": {}
-        }
       }
     }
   },
@@ -59,28 +33,15 @@
       "path": "../bois.PetShopApplication.Core/bois.PetShopApplication.Core.csproj",
       "msbuildProject": "../bois.PetShopApplication.Core/bois.PetShopApplication.Core.csproj"
     },
-    "bois.PetShopApplication.DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../bois.PetShopApplication.DataAccess/bois.PetShopApplication.DataAccess.csproj",
-      "msbuildProject": "../bois.PetShopApplication.DataAccess/bois.PetShopApplication.DataAccess.csproj"
-    },
     "bois.PetShopApplication.Domain/1.0.0": {
       "type": "project",
       "path": "../bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj",
       "msbuildProject": "../bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj"
-    },
-    "bois.PetShopApplication.SQL/1.0.0": {
-      "type": "project",
-      "path": "../bois.PetShopApplication.SQL/bois.PetShopApplication.SQL.csproj",
-      "msbuildProject": "../bois.PetShopApplication.SQL/bois.PetShopApplication.SQL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "bois.PetShopApplication.Core >= 1.0.0",
-      "bois.PetShopApplication.DataAccess >= 1.0.0",
-      "bois.PetShopApplication.Domain >= 1.0.0",
-      "bois.PetShopApplication.SQL >= 1.0.0"
+      "bois.PetShopApplication.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -89,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj",
-      "projectName": "bois.PetShop",
-      "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj",
+      "projectUniqueName": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj",
+      "projectName": "bois.PetShopApplication.DataAccess",
+      "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\obj\\",
+      "outputPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -108,17 +69,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj": {
-              "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj"
-            },
-            "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj"
-            },
             "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj": {
               "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj"
-            },
-            "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.SQL\\bois.PetShopApplication.SQL.csproj": {
-              "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.SQL\\bois.PetShopApplication.SQL.csproj"
             }
           }
         }

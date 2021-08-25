@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj": {}
+    "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.SQL\\bois.PetShopApplication.SQL.csproj": {}
   },
   "projects": {
     "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj": {
@@ -26,62 +26,6 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Marco\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj",
-        "projectName": "bois.PetShopApplication.DataAccess",
-        "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj": {
-                "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj"
-              }
-            }
           }
         },
         "warningProperties": {
@@ -192,71 +136,6 @@
             "projectReferences": {
               "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj": {
                 "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Users\\Marco\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj",
-        "projectName": "bois.PetShop",
-        "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\bois.PetShop.csproj",
-        "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShop\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj": {
-                "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj"
-              },
-              "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.DataAccess\\bois.PetShopApplication.DataAccess.csproj"
-              },
-              "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj": {
-                "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Domain\\bois.PetShopApplication.Domain.csproj"
-              },
-              "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.SQL\\bois.PetShopApplication.SQL.csproj": {
-                "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.SQL\\bois.PetShopApplication.SQL.csproj"
               }
             }
           }

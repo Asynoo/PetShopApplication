@@ -2,55 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/PetShopApplication.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/Debug/net5.0/PetShopApplication.Core.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/Debug/net5.0/PetShopApplication.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/Debug/net5.0/PetShopApplication.Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/Debug/net5.0/PetShopApplication.Core.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/PetShopApplication.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/PetShopApplication.Core.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/PetShopApplication.Core.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PetShopApplication.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/IServices/IPetService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/IServices/IPetTypeService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/Models/Pet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/Models/PetType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/bois.PetShopApplication.Core.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/bois.PetShopApplication.Core.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/bois.PetShopApplication.Core.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/bois.PetShopApplication.Core.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/IRepositories/IPetRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/IRepositories/IPetTypeRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/Services/PetService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/Services/PetTypeService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/bois.PetShopApplication.Domain.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/bois.PetShopApplication.Domain.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/bois.PetShopApplication.Domain.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/Repositories/PetRepositoryInMemory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bois.PetShopApplication.DataAccess.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/bois.PetShopApplication.DataAccess.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/bois.PetShopApplication.DataAccess.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/bois.PetShopApplication.DataAccess.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/Converters/PetConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/Entities/PetEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/Entities/PetTypeEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/Repositories/PetRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/bois.PetShopApplication.SQL.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/bois.PetShopApplication.SQL.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/bois.PetShopApplication.SQL.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/bois.PetShopApplication.SQL.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PetShopApplication.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PetShopApplication.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bois.PetShop.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bois.PetShop.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/bois.PetShop.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/bois.PetShop.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/IServices/IPetService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/IServices/IPetService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/IRepositories/IPetRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/IRepositories/IPetRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/Services/PetService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/Services/PetService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/bois.PetShopApplication.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/bois.PetShopApplication.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +112,8 @@
       <updated>1629805103800</updated>
       <workItem from="1629805104133" duration="1000" />
       <workItem from="1629805141289" duration="2678000" />
+      <workItem from="1629808980224" duration="926000" />
+      <workItem from="1629874978196" duration="6067000" />
     </task>
     <servers />
   </component>
@@ -115,7 +121,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -127,6 +133,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

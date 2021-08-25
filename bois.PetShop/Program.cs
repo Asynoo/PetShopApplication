@@ -1,4 +1,8 @@
 ﻿using System;
+using bois.PetShopApplication.Core.IServices;
+using bois.PetShopApplication.Domain.IRepositories;
+using bois.PetShopApplication.Domain.Services;
+using bois.PetShopApplication.SQL.Repositories;
 
 namespace bois.PetShop
 {
@@ -6,7 +10,11 @@ namespace bois.PetShop
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IPetRepository repo = new PetRepository();
+            IPetService service = new PetService(repo);
+            
+            Printer printer = new Printer(service);
+            printer.start();
         }
     }
 }
