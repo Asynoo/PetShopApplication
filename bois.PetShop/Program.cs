@@ -13,8 +13,9 @@ namespace bois.PetShop
             IPetRepository repo = new PetRepository();
             IPetService service = new PetService(repo);
             
-            Printer printer = new Printer(service);
-            printer.start();
+            Printer printer = new Printer(service); 
+            printer.Start();
+            Console.ReadLine();
         }
     }
 }

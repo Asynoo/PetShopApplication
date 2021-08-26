@@ -11,7 +11,7 @@ namespace bois.PetShopApplication.SQL.Converters
             {
                 Id = entity.Id,
                 Name = entity.Name,
-                Type = entity.Type,
+                //Type = entity.Type,
                 Birthdate = entity.Birthdate,
                 SoldDate = entity.SoldDate,
                 Color = entity.Color,
@@ -24,7 +24,7 @@ namespace bois.PetShopApplication.SQL.Converters
             {
                 Id = pet.Id,
                 Name = pet.Name,
-                Type = pet.Type,
+                //Type = pet.Type,
                 Birthdate = pet.Birthdate,
                 SoldDate = pet.SoldDate,
                 Color = pet.Color,
