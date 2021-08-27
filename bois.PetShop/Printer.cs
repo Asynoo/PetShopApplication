@@ -11,13 +11,12 @@ namespace bois.PetShop
         private static int _id = 1;
         private static readonly List<Pet> Pets = new();
         private IPetService _petPetService;
-        private IPetTypeService _petTypeService;
+        private readonly IPetTypeService _petTypeService;
 
         public Printer(IPetService petService, IPetTypeService petTypeService)
         {
             _petPetService = petService;
             _petTypeService = petTypeService;
-
         }
 
         public void Start()
@@ -77,12 +76,11 @@ namespace bois.PetShop
 
         private void FiveCheapestPets()
         {
-            double lowest_Price = Pets.Any() ? Pets.Min(Pet => new Pet().Price) : 0;
-            foreach(Pet a in Pets){
-                if(a.Price <= lowest_Price){
-                    lowest_Price = a.Price;
-                    Console.WriteLine(a.Price);
-                }
+            var lowestPrice = Pets.Any() ? Pets.Min(Pet => new Pet().Price) : 0;
+            foreach (var a in Pets.Where(a => a.Price <= lowestPrice))
+            {
+                lowestPrice = a.Price;
+                Console.WriteLine(a.Price);
             }
         }
 
@@ -90,15 +88,15 @@ namespace bois.PetShop
         {
             Console.WriteLine(StringConstants.PetNameInput);
             var petName = Console.ReadLine();
-            
+
             Console.WriteLine(StringConstants.PetTypeInput);
             var petTypeName = SelectPetType();
-            
+
             /*Console.WriteLine(StringConstants.PetBirthDateInput);
             var petBirthdate = Int32.Parse(Console.ReadLine());
             Console.WriteLine(StringConstants.PetSoldDateInput);
             var petSoldDate = Console.ReadLine();*/
-            
+
             Console.WriteLine(StringConstants.PetColorInput);
             var petColor = Console.ReadLine();
             Console.WriteLine(StringConstants.PetPriceInput);
@@ -125,35 +123,33 @@ namespace bois.PetShop
         {
             throw new NotImplementedException();
         }
-        
+
         private PetType CreateNewPetType()
         {
-            PetType newPetType = new PetType();
+            var newPetType = new PetType();
             Console.WriteLine(StringConstants.AddPetTypeGreeting);
             Console.WriteLine(StringConstants.PetTypeNameLine);
             newPetType.Name = Console.ReadLine();
             Console.WriteLine($"{newPetType.Name} successfully added.");
             return newPetType;
         }
-        
+
         private PetType SelectPetType()
         {
             int selection;
             do
             {
-                
                 var selectedOption = Console.ReadKey();
-                _petTypeService.GetPetTypes().ForEach(type => Console.Write(type.ToString() + "\n" ));
-                
+                _petTypeService.GetPetTypes().ForEach(type => Console.Write(type + "\n"));
+
                 selection = selectedOption.KeyChar - '0';
                 if (selection < 0 || selection > _petTypeService.GetPetTypes().Count)
-                {
                     Console.WriteLine($"Please select an option between 0 - {_petTypeService.GetPetTypes().Count}");
-                }
             } while (selection < 0 || selection > _petTypeService.GetPetTypes().Count);
+
             return _petTypeService.FindById(selection);
         }
-        
+
         private static int ShowMenu()
         {
             string[] menuItems =
@@ -181,7 +177,8 @@ namespace bois.PetShop
         private static void ListAllPets()
         {
             foreach (var pet in Pets)
-                Console.WriteLine($"\n Id: {pet.Id} \n Name: {pet.Name} \n Type: {pet.Type.Name} \n Birthdate: {pet.Birthdate} \n SoldDate: {pet.SoldDate} \n Color: {pet.Color} \n Price: {pet.Price}$ \n");
+                Console.WriteLine(
+                    $"\n Id: {pet.Id} \n Name: {pet.Name} \n Type: {pet.Type.Name} \n Birthdate: {pet.Birthdate} \n SoldDate: {pet.SoldDate} \n Color: {pet.Color} \n Price: {pet.Price}$ \n");
         }
     }
 }
