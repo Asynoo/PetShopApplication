@@ -1,0 +1,12 @@
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\bin\Debug\net5.0\bois.PetShopApplication.Core.deps.json
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\bin\Debug\net5.0\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\bin\Debug\net5.0\ref\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\bin\Debug\net5.0\bois.PetShopApplication.Core.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.csproj.AssemblyReference.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.AssemblyInfoInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.AssemblyInfo.cs
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\ref\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Core\obj\Debug\net5.0\bois.PetShopApplication.Core.pdb

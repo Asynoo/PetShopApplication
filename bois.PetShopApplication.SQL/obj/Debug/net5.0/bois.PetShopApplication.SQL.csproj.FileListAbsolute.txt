@@ -1,0 +1,17 @@
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.SQL.deps.json
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.SQL.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\ref\bois.PetShopApplication.SQL.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.SQL.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.Domain.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\bin\Debug\net5.0\bois.PetShopApplication.Core.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.csproj.AssemblyReference.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.AssemblyInfoInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.AssemblyInfo.cs
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.csproj.CopyComplete
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\ref\bois.PetShopApplication.SQL.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.SQL\obj\Debug\net5.0\bois.PetShopApplication.SQL.pdb

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using bois.PetShopApplication.Core.IServices;
 using bois.PetShopApplication.Core.Models;
 
@@ -69,7 +70,13 @@ namespace bois.PetShop
 
         private void FiveCheapestPets()
         {
-            throw new NotImplementedException();
+            double lowest_Price = Pets.Any() ? Pets.Min(Pet => new Pet().Price) : 0;
+            foreach(Pet a in Pets){
+                if(a.Price <= lowest_Price){
+                    lowest_Price = a.Price;
+                    Console.WriteLine(a.Price);
+                }
+            }
         }
 
         private void AddPet()

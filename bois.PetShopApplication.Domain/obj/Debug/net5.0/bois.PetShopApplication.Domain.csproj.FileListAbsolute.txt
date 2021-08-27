@@ -1,0 +1,15 @@
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\bois.PetShopApplication.Domain.deps.json
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\ref\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\bois.PetShopApplication.Domain.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\bin\Debug\net5.0\bois.PetShopApplication.Core.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.csproj.AssemblyReference.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.AssemblyInfoInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.AssemblyInfo.cs
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.csproj.CopyComplete
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\ref\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.Domain\obj\Debug\net5.0\bois.PetShopApplication.Domain.pdb

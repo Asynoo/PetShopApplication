@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "bois.PetShopApplication.Domain/1.0.0": {
+        "dependencies": {
+          "bois.PetShopApplication.Core": "1.0.0"
+        },
+        "runtime": {
+          "bois.PetShopApplication.Domain.dll": {}
+        }
+      },
+      "bois.PetShopApplication.Core/1.0.0": {
+        "runtime": {
+          "bois.PetShopApplication.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "bois.PetShopApplication.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bois.PetShopApplication.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

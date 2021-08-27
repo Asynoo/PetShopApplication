@@ -1,0 +1,17 @@
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.DataAccess.deps.json
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.DataAccess.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\ref\bois.PetShopApplication.DataAccess.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.DataAccess.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.Core.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.Domain.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.Domain.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\bin\Debug\net5.0\bois.PetShopApplication.Core.pdb
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.AssemblyInfo.cs
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.csproj.CopyComplete
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\ref\bois.PetShopApplication.DataAccess.dll
+C:\Users\Marco\Documents\GitHub\PetShopApplication\bois.PetShopApplication.DataAccess\obj\Debug\net5.0\bois.PetShopApplication.DataAccess.pdb
