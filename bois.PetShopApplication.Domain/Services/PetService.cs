@@ -8,20 +8,19 @@ namespace bois.PetShopApplication.Domain.Services
     public class PetService : IPetService
     {
         private IPetRepository _repo;
-        
         public PetService(IPetRepository repo)
         {
             _repo = repo;
         }
-
-        public Pet Create(Pet pet)
-        {
-            return _repo.Add(pet);
-        }
-
-        public List<Pet> ReadAll()
+        public List<Pet> GetPets()
         {
             return _repo.FindAll();
+        }
+
+        public Pet Add(Pet pet)
+        {
+            _repo.Add(pet);
+            return pet;
         }
     }
 }

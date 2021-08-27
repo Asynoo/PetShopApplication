@@ -5,8 +5,8 @@ namespace bois.PetShopApplication.Core.IServices
 {
     public interface IPetService
     {
-        Pet Create(Pet pet);
+        List<Pet> GetPets();
 
-        List<Pet> ReadAll();
+        Pet Add(Pet pet);
     }
 }
