@@ -4,6 +4,13 @@
     <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/Printer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/ref/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/ref/bois.PetShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/ref/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/ref/bois.PetShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +75,8 @@
       <workItem from="1629904167063" duration="62000" />
       <workItem from="1629961341856" duration="8721000" />
       <workItem from="1630051720558" duration="2687000" />
-      <workItem from="1630055225386" duration="4078000" />
+      <workItem from="1630055225386" duration="4165000" />
+      <workItem from="1630581827011" duration="5035000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1629904209169</created>

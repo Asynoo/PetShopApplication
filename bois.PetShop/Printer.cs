@@ -38,27 +38,27 @@ namespace bois.PetShop
                         break;
                     case 2:
                         Console.Clear();
-                        EditPet();
+                        _petTypeService.Add(CreateNewPetType());
                         break;
                     case 3:
                         Console.Clear();
-                        DeletePet();
+                        EditPet();
                         break;
                     case 4:
                         Console.Clear();
-                        ListAllPets();
+                        DeletePet();
                         break;
                     case 5:
                         Console.Clear();
-                        ShowPetByType();
+                        ListAllPets();
                         break;
                     case 6:
                         Console.Clear();
-                        FiveCheapestPets();
+                        ShowPetByType();
                         break;
                     case 7:
                         Console.Clear();
-                        _petTypeService.Add(CreateNewPetType());
+                        FiveCheapestPets();
                         break;
                 }
 
@@ -76,11 +76,11 @@ namespace bois.PetShop
 
         private void FiveCheapestPets()
         {
-            var lowestPrice = Pets.Any() ? Pets.Min(Pet => new Pet().Price) : 0;
-            foreach (var a in Pets.Where(a => a.Price <= lowestPrice))
+            var lowestPrice = Pets.Any() ? Pets.Min(_ => new Pet().Price) : 0;
+            foreach (var pet in Pets.Where(pet => pet.Price <= lowestPrice))
             {
-                lowestPrice = a.Price;
-                Console.WriteLine(a.Price);
+                lowestPrice = pet.Price;
+                Console.WriteLine(pet.Price);
             }
         }
 
@@ -92,13 +92,29 @@ namespace bois.PetShop
             Console.WriteLine(StringConstants.PetTypeInput);
             var petTypeName = SelectPetType();
 
-            /*Console.WriteLine(StringConstants.PetBirthDateInput);
-            var petBirthdate = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(StringConstants.PetBirthDateInput);
+            Console.WriteLine("Please enter Day:");
+            var petBirthdateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            
+            Console.WriteLine("Please enter Month:");
+            var petBirthdateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            
+            Console.WriteLine("Please enter Year:");
+            var petBirthdateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            
             Console.WriteLine(StringConstants.PetSoldDateInput);
-            var petSoldDate = Console.ReadLine();*/
+            Console.WriteLine("Please enter Day:");
+            var petSoldDateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            
+            Console.WriteLine("Please enter Month:");
+            var petSoldDateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            
+            Console.WriteLine("Please enter Year:");
+            var petSoldDateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
             Console.WriteLine(StringConstants.PetColorInput);
             var petColor = Console.ReadLine();
+            
             Console.WriteLine(StringConstants.PetPriceInput);
             var petPrice = Console.ReadLine();
 
@@ -107,8 +123,8 @@ namespace bois.PetShop
                 Id = _id++,
                 Name = petName,
                 Type = petTypeName,
-                Birthdate = DateTime.Now,
-                SoldDate = DateTime.Today,
+                Birthdate = new DateTime(petBirthdateYear, petBirthdateMonth, petBirthdateDay),
+                SoldDate = new DateTime(petSoldDateYear, petSoldDateMonth, petSoldDateDay),
                 Color = petColor,
                 Price = Convert.ToDouble(petPrice)
             });
@@ -116,12 +132,54 @@ namespace bois.PetShop
 
         private void EditPet()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please Enter Id of Pet you want to Edit: ");
+            var pet = FindPetById();
+            
+            Console.WriteLine(StringConstants.PetNameInput);
+            pet.Name = Console.ReadLine();
+
+            Console.WriteLine(StringConstants.PetTypeInput);
+            pet.Type = SelectPetType();
+
+            Console.WriteLine(StringConstants.PetBirthDateInput);
+            pet.Birthdate = Convert.ToDateTime(Console.ReadLine());
+            
+            Console.WriteLine(StringConstants.PetSoldDateInput);
+            pet.SoldDate = Convert.ToDateTime(Console.ReadLine());
+
+            Console.WriteLine(StringConstants.PetColorInput);
+            pet.Color = Console.ReadLine();
+            
+            Console.WriteLine(StringConstants.PetPriceInput);
+            pet.Price = Convert.ToDouble(Console.ReadLine());
+        }
+
+        private static Pet FindPetById()
+        {
+            int id;
+            while (!int.TryParse(Console.ReadLine(), out id))
+            {
+                Console.WriteLine("Please Enter Id of Pet You Want Removed: ");
+            }
+
+            foreach (var pet in Pets)
+            {
+                if (pet.Id == id)
+                {
+                    return pet;
+                }
+            }
+
+            return null;
         }
 
         private void DeletePet()
         {
-            throw new NotImplementedException();
+            var petFound = FindPetById();
+            if (petFound != null)
+            {
+                Pets.Remove(petFound);
+            }
         }
 
         private PetType CreateNewPetType()
@@ -155,12 +213,12 @@ namespace bois.PetShop
             string[] menuItems =
             {
                 StringConstants.AddNewPet,
+                StringConstants.AddNewPetType,
                 StringConstants.EditPet,
                 StringConstants.DeletePet,
                 StringConstants.ShowAllPets,
                 StringConstants.SearchPetByType,
-                StringConstants.FiveCheapestPets,
-                StringConstants.AddNewPetType
+                StringConstants.FiveCheapestPets
             };
             Console.WriteLine("Select What you want to do:\n");
 
@@ -179,6 +237,7 @@ namespace bois.PetShop
             foreach (var pet in Pets)
                 Console.WriteLine(
                     $"\n Id: {pet.Id} \n Name: {pet.Name} \n Type: {pet.Type.Name} \n Birthdate: {pet.Birthdate} \n SoldDate: {pet.SoldDate} \n Color: {pet.Color} \n Price: {pet.Price}$ \n");
+            Console.ReadLine();
         }
     }
 }
