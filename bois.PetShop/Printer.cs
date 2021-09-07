@@ -74,6 +74,8 @@ namespace bois.PetShop
 
             Console.Clear();
             Console.ReadLine();
+            
+            
         }
 
         private void SortAllPetsByPrice()
