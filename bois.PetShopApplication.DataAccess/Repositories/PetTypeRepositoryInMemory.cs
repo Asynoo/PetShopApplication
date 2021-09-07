@@ -13,7 +13,7 @@ namespace bois.PetShopApplication.DataAccess.Repositories
             new PetType {Id = 3, Name = "Cat"}
         };
 
-        private static int _id = 1;
+        private static int _id = 4;
 
         public PetType Add(PetType petType)
         {

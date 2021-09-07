@@ -412,3 +412,4 @@ bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.Data
 bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj
 bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.csproj.AssemblyReference.cache
 bois.PetShopApplication.SQL/bois.PetShopApplication.SQL.csproj
+*.xml

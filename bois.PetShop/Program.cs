@@ -8,8 +8,8 @@ namespace bois.PetShop
     {
         private static void Main(string[] args)
         {
-            Console.BackgroundColor = ConsoleColor.Cyan;
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Black;
 
 
             var petRepo = new PetRepositoryInMemory();
