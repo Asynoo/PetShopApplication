@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/Printer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/StringConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/StringConstants.cs" afterDir="false" />
