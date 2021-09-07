@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/bois.PetShop/Printer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +11,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Marco/Documents/GitHub/PetShopApplication/bois.PetShop/Printer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Marco/Documents/GitHub/PetShopApplication/bois.PetShop/Printer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Marco/Documents/GitHub/PetShopApplication/bois.PetShop/Printer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Marco/Documents/GitHub/PetShopApplication/bois.PetShop/Printer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Marco/Documents/GitHub/PetShopApplication/bois.PetShop/Printer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PetShopApplication.Core/Class1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xAk6DMmuWyAkMj20PTUenKprZK" />

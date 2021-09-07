@@ -7,11 +7,13 @@ namespace bois.PetShopApplication.Domain.Services
 {
     public class PetTypeService : IPetTypeService
     {
-        private IPetTypeRepository _repo;
+        private readonly IPetTypeRepository _repo;
+
         public PetTypeService(IPetTypeRepository repo)
         {
             _repo = repo;
         }
+
         public List<PetType> GetPetTypes()
         {
             return _repo.FindAll();
@@ -21,7 +23,7 @@ namespace bois.PetShopApplication.Domain.Services
         {
             return _repo.Add(petType);
         }
-        
+
         public PetType FindByName(string name)
         {
             return GetPetTypes().Find(type => type.Name == name);

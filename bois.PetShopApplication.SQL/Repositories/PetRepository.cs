@@ -8,7 +8,7 @@ namespace bois.PetShopApplication.SQL.Repositories
 {
     public class PetRepository : IPetRepository
     {
-        private static List<PetEntity> _petTable = new List<PetEntity>();
+        private static readonly List<PetEntity> _petTable = new();
         private static int _id = 1;
         private readonly PetConverter _petConverter;
 
@@ -28,10 +28,7 @@ namespace bois.PetShopApplication.SQL.Repositories
         public List<Pet> FindAll()
         {
             var listOfPets = new List<Pet>();
-            foreach (var petEntity in _petTable)
-            {
-                listOfPets.Add(_petConverter.Convert(petEntity));
-            }
+            foreach (var petEntity in _petTable) listOfPets.Add(_petConverter.Convert(petEntity));
 
             return listOfPets;
         }

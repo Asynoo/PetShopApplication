@@ -21,11 +21,10 @@
         public static string PetPriceInput = "Enter Pet Price: ";
 
         public static string PrintAllPets = "Here is all your Pets: ";
-        
+
         public static string AddPetTypeGreeting = "Add New Pet Type:";
         public static string PetTypeNameLine = "Please Enter The Type of The Pet:";
-        
-        public static string PetTypeLine = "Please Select your Pet Type:";
 
+        public static string PetTypeLine = "Please Select your Pet Type:";
     }
 }

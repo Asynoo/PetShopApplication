@@ -18,6 +18,7 @@ namespace bois.PetShopApplication.SQL.Converters
                 Price = entity.Price
             };
         }
+
         public PetEntity Convert(Pet pet)
         {
             return new PetEntity

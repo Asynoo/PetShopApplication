@@ -9,11 +9,11 @@ namespace bois.PetShop
     public class Printer
     {
         private static int _id = 1;
-                
-        private readonly IPetTypeService _petTypeService;
 
         private static List<Pet> _pets;
         private static List<PetType> _petsTypes;
+
+        private readonly IPetTypeService _petTypeService;
 
         public Printer(IPetTypeService petTypeService, IPetService petService)
         {
@@ -74,17 +74,12 @@ namespace bois.PetShop
 
             Console.Clear();
             Console.ReadLine();
-            
-            
         }
 
         private void SortAllPetsByPrice()
         {
             var sortedStuff = _pets.OrderByDescending(x => x.Price);
-            foreach (var pet in sortedStuff)
-            {
-                Console.WriteLine(pet);
-            }
+            foreach (var pet in sortedStuff) Console.WriteLine(pet);
 
             Console.ReadLine();
             Console.Clear();
@@ -93,11 +88,8 @@ namespace bois.PetShop
         private void ShowPetByType()
         {
             Console.WriteLine("Please Enter Id of Animal Type you Want: ");
-            var id = Int32.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
-            foreach (var pet in _pets.Where(x => x.Type.Id == id))
-            {
-                Console.WriteLine(pet);
-            }
+            var id = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            foreach (var pet in _pets.Where(x => x.Type.Id == id)) Console.WriteLine(pet);
 
 
             Console.ReadLine();
@@ -106,10 +98,7 @@ namespace bois.PetShop
         private void FiveCheapestPets()
         {
             var sortedStuff = _pets.OrderByDescending(x => x.Price).Take(5);
-            foreach (var pet in sortedStuff)
-            {
-                Console.WriteLine(pet);
-            }
+            foreach (var pet in sortedStuff) Console.WriteLine(pet);
 
             Console.ReadLine();
         }
@@ -190,17 +179,11 @@ namespace bois.PetShop
         {
             int id;
             while (!int.TryParse(Console.ReadLine(), out id))
-            {
                 Console.WriteLine("Please Enter Id of Pet You Want Removed: ");
-            }
 
             foreach (var pet in _pets)
-            {
                 if (pet.Id == id)
-                {
                     return pet;
-                }
-            }
 
             return null;
         }
@@ -208,10 +191,7 @@ namespace bois.PetShop
         private void DeletePet()
         {
             var petFound = FindPetById();
-            if (petFound != null)
-            {
-                _pets.Remove(petFound);
-            }
+            if (petFound != null) _pets.Remove(petFound);
 
             Console.Clear();
         }
