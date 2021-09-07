@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace bois.PetShopApplication.Core.Models
 {
@@ -14,7 +15,7 @@ namespace bois.PetShopApplication.Core.Models
 
         public override string ToString()
         {
-            return $"{Id},{Type.Name}, Name: {Name}, Color: {Color}, Born: {Birthdate}, Price: {Price} dolans";
+            return $"{Id},{Type.Name}, Name: {Name}, Color: {Color}, Born: {Birthdate}, Price: {Price} $";
         }
     }
 }

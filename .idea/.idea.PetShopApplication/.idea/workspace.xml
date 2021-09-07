@@ -4,13 +4,37 @@
     <list default="true" id="8fca5b66-eae7-44a1-8c1c-217fb255c622" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PetShopApplication/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/Printer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/StringConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/StringConstants.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/ref/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/ref/bois.PetShop.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/ref/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/ref/bois.PetShop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/obj/Debug/net5.0/bois.PetShopApplication.SQL.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/Models/Pet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/Models/Pet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Core/obj/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/Repositories/PetRepositoryInMemory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/Repositories/PetRepositoryInMemory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/Repositories/PetTypeRepositoryInMemory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/Repositories/PetTypeRepositoryInMemory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/bin/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.Domain/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.SQL/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/bin/Debug/net5.0/bois.PetShopApplication.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bois.PetShopApplication.SQL/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShopApplication.SQL/bin/Debug/net5.0/bois.PetShopApplication.Core.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +45,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PetShopApplication.Core/Class1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1xAk6DMmuWyAkMj20PTUenKprZK" />
@@ -38,6 +63,7 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -76,7 +102,8 @@
       <workItem from="1629961341856" duration="8721000" />
       <workItem from="1630051720558" duration="2687000" />
       <workItem from="1630055225386" duration="4165000" />
-      <workItem from="1630581827011" duration="5035000" />
+      <workItem from="1630581827011" duration="7294000" />
+      <workItem from="1631020022770" duration="6640000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1629904209169</created>
