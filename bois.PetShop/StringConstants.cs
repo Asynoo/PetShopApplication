@@ -9,9 +9,9 @@
         public static string DeletePet = "Delete a Pet";
         public static string ShowAllPets = "Show all Pets";
         public static string SortPetByPrice = "Sort Pets by Price";
-        public static string searchPetTypeName = "Search Pet by Type Name";
+        public static string SearchPetTypeName = "Search Pet by Type Name";
         public static string FiveCheapestPets = "See the 5 cheapest available Pets";
-        public static string searchPetTypeId = "Search Pet by Type Id";
+        public static string SearchPetTypeId = "Search Pet by Type Id";
         
         /* Functionality Strings*/
         public static string PetNameInput = "Enter Pet Name: ";

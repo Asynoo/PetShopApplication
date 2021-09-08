@@ -8,7 +8,7 @@ namespace bois.PetShop
 {
     public class Printer
     {
-        private static int _id = 9;
+        private static int _id = 10;
         private static List<Pet> _pets;
         private static List<PetType> _petsTypes;
         private readonly IPetTypeService _petTypeService;
@@ -83,7 +83,7 @@ namespace bois.PetShop
             Console.ReadLine();
         }
 
-        private void SortAllPetsByPrice()
+        private static void SortAllPetsByPrice()
         {
             var sortedStuff = _pets.OrderByDescending(x => x.Price);
             foreach (var pet in sortedStuff) Console.WriteLine(pet);
@@ -91,7 +91,7 @@ namespace bois.PetShop
             Console.Clear();
         }
 
-        private void ShowPetByTypeId()
+        private static void ShowPetByTypeId()
         {
             Console.WriteLine("Please Enter Id of Animal Type you Want: ");
             var id = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
@@ -100,7 +100,7 @@ namespace bois.PetShop
             Console.Clear();
         }
         
-        private void ShowPetByTypeName()
+        private static void ShowPetByTypeName()
         {
             Console.WriteLine("Please Enter Name of Animal Type you Want: ");
             var name = (Console.ReadLine() ?? throw new InvalidOperationException());
@@ -109,9 +109,9 @@ namespace bois.PetShop
             Console.Clear();
         }
 
-        private void FiveCheapestPets()
+        private static void FiveCheapestPets()
         {
-            var sortedStuff = _pets.OrderByDescending(x => x.Price).Take(5);
+            var sortedStuff = _pets.OrderBy(x => x.Price).Take(5);
             foreach (var pet in sortedStuff) Console.WriteLine(pet);
             Console.ReadLine();
             Console.Clear();
@@ -129,30 +129,66 @@ namespace bois.PetShop
 
             Console.WriteLine(StringConstants.PetBirthDateInput);
             Console.WriteLine("Please enter Day:");
-            var petBirthdateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petBirthdateDay;
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateDay))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine("Please enter Month:");
-            var petBirthdateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petBirthdateMonth;
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateMonth))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine("Please enter Year:");
-            var petBirthdateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petBirthdateYear;
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateYear))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine(StringConstants.PetSoldDateInput);
             Console.WriteLine("Please enter Day:");
-            var petSoldDateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petSoldDateDay;
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateDay))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine("Please enter Month:");
-            var petSoldDateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petSoldDateMonth;
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateMonth))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine("Please enter Year:");
-            var petSoldDateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            int petSoldDateYear;
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateYear))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             Console.WriteLine(StringConstants.PetColorInput);
             var petColor = Console.ReadLine();
             Console.Clear();
+            
             Console.WriteLine(StringConstants.PetPriceInput);
-            var petPrice = Console.ReadLine();
+            int petPrice;
+            while (!int.TryParse(Console.ReadLine(), out petPrice))
+            {
+                EnterIntegerPlease();
+            }
             Console.Clear();
+            
             _pets.Add(new Pet
             {
                 Id = _id++,
@@ -200,14 +236,14 @@ namespace bois.PetShop
             return _pets.FirstOrDefault(pet => pet.Id == id);
         }
 
-        private void DeletePet()
+        private static void DeletePet()
         {
             var petFound = FindPetById();
             if (petFound != null) _pets.Remove(petFound);
             Console.Clear();
         }
 
-        private PetType CreateNewPetType()
+        private static PetType CreateNewPetType()
         {
             var newPetType = new PetType();
             Console.WriteLine(StringConstants.AddPetTypeGreeting);
@@ -242,8 +278,8 @@ namespace bois.PetShop
                 StringConstants.AddNewPetType,
                 StringConstants.EditPet,
                 StringConstants.DeletePet,
-                StringConstants.searchPetTypeName,
-                StringConstants.searchPetTypeId,
+                StringConstants.SearchPetTypeName,
+                StringConstants.SearchPetTypeId,
                 StringConstants.SortPetByPrice,
                 StringConstants.FiveCheapestPets,
                 StringConstants.ShowAllPets
@@ -274,6 +310,11 @@ namespace bois.PetShop
                     $"Price: {pet.Price}$ \n");
             Console.ReadLine();
             Console.Clear();
+        }
+
+        private static void EnterIntegerPlease()
+        {
+            Console.Write("Please Enter a Number: ");
         }
     }
 }
