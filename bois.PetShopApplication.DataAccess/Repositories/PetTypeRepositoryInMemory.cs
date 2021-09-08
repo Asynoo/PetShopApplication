@@ -4,27 +4,27 @@ using bois.PetShopApplication.Domain.IRepositories;
 
 namespace bois.PetShopApplication.DataAccess.Repositories
 {
-    public class PetTypeRepositoryMemory : IPetTypeRepository
+    public class TypeRepositoryMemory : IPetTypeRepository
     {
-        private static readonly List<PetType> PetTypesTable = new()
+        private static readonly List<Type> TypesTable = new()
         {
-            new PetType {Id = 1, Name = "Monkey"},
-            new PetType {Id = 2, Name = "Dog"},
-            new PetType {Id = 3, Name = "Cat"}
+            new Type {Id = 1, Name = "Monkey"},
+            new Type {Id = 2, Name = "Dog"},
+            new Type {Id = 3, Name = "Cat"}
         };
 
         private static int _id = 4;
 
-        public PetType Add(PetType petType)
+        public Type Add(Type type)
         {
-            petType.Id = _id++;
-            PetTypesTable.Add(petType);
-            return petType;
+            type.Id = _id++;
+            TypesTable.Add(type);
+            return type;
         }
 
-        public List<PetType> FindAll()
+        public List<Type> FindAll()
         {
-            return PetTypesTable;
+            return TypesTable;
         }
     }
 }

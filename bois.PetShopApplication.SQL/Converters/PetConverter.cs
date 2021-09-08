@@ -3,15 +3,14 @@ using bois.PetShopApplication.SQL.Entities;
 
 namespace bois.PetShopApplication.SQL.Converters
 {
-    public class PetConverter
+    public class Converter
     {
-        public Pet Convert(PetEntity entity)
+        public static Pet Convert(PetEntity entity)
         {
             return new Pet
             {
                 Id = entity.Id,
                 Name = entity.Name,
-                //Type = entity.Type,
                 Birthdate = entity.Birthdate,
                 SoldDate = entity.SoldDate,
                 Color = entity.Color,
@@ -19,13 +18,12 @@ namespace bois.PetShopApplication.SQL.Converters
             };
         }
 
-        public PetEntity Convert(Pet pet)
+        public static PetEntity Convert(Pet pet)
         {
             return new PetEntity
             {
                 Id = pet.Id,
                 Name = pet.Name,
-                //Type = pet.Type,
                 Birthdate = pet.Birthdate,
                 SoldDate = pet.SoldDate,
                 Color = pet.Color,

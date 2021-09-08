@@ -1,6 +1,6 @@
 ﻿namespace bois.PetShopApplication.SQL.Entities
 {
-    public class PetTypeEntity
+    public class TypeEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }

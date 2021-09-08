@@ -5,7 +5,7 @@ namespace bois.PetShopApplication.Domain.IRepositories
 {
     public interface IPetTypeRepository
     {
-        List<PetType> FindAll();
-        PetType Add(PetType petType);
+        List<Type> FindAll();
+        Type Add(Type type);
     }
 }

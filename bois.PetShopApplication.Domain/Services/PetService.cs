@@ -5,11 +5,11 @@ using bois.PetShopApplication.Domain.IRepositories;
 
 namespace bois.PetShopApplication.Domain.Services
 {
-    public class PetService : IPetService
+    public class Service : IPetService
     {
         private readonly IPetRepository _repo;
 
-        public PetService(IPetRepository repo)
+        public Service(IPetRepository repo)
         {
             _repo = repo;
         }

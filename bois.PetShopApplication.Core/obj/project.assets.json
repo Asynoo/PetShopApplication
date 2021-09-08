@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Marco\\.nuget\\packages\\": {}
+    "C:\\Users\\marcg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj",
+      "projectUniqueName": "C:\\Users\\marcg\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj",
       "projectName": "bois.PetShopApplication.Core",
-      "projectPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj",
-      "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marco\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\obj\\",
+      "projectPath": "C:\\Users\\marcg\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\bois.PetShopApplication.Core.csproj",
+      "packagesPath": "C:\\Users\\marcg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marcg\\Documents\\GitHub\\PetShopApplication\\bois.PetShopApplication.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marcg\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Marco\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\marcg\\.dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

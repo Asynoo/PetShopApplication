@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using bois.PetShopApplication.Core.IServices;
 using bois.PetShopApplication.Core.Models;
+using Type = bois.PetShopApplication.Core.Models.Type;
 
 namespace bois.PetShop
 {
@@ -10,14 +11,14 @@ namespace bois.PetShop
     {
         private static int _id = 10;
         private static List<Pet> _pets;
-        private static List<PetType> _petsTypes;
+        private static List<Type> _petsTypes;
         private readonly IPetTypeService _petTypeService;
 
-        public Printer(IPetTypeService petTypeService, IPetService petService)
+        public Printer(IPetTypeService typeService, IPetService service)
         {
-            _petTypeService = petTypeService;
+            _petTypeService = typeService;
             _petsTypes = _petTypeService.GetPetTypes();
-            _pets = petService.GetPets();
+            _pets = service.GetPets();
         }
 
         public void Start()
@@ -32,11 +33,11 @@ namespace bois.PetShop
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
 
-            var selection = ShowMenu();
-            while (selection != 10)
+            var petSelection = ShowMenu();
+            while (petSelection != 10)
             {
                 Clear();
-                switch (selection)
+                switch (petSelection)
                 {
                     case 1:
                         Clear();
@@ -76,7 +77,7 @@ namespace bois.PetShop
                         break;
                 }
 
-                selection = ShowMenu();
+                petSelection = ShowMenu();
             }
 
             Clear();
@@ -85,8 +86,8 @@ namespace bois.PetShop
 
         private static void SortAllPetsByPrice()
         {
-            var sortedStuff = _pets.OrderBy(x => x.Price);
-            foreach (var pet in sortedStuff)
+            var petSortedStuff = _pets.OrderBy(x => x.Price);
+            foreach (var pet in petSortedStuff)
                 Print(
                     $"\n Id: {pet.Id} \n " +
                     $"Name: {pet.Name} \n " +
@@ -103,8 +104,8 @@ namespace bois.PetShop
         private static void ShowPetByTypeId()
         {
             Print("Please Enter Id of Animal Type you Want: ");
-            var id = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
-            foreach (var pet in _pets.Where(x => x.Type.Id == id))
+            var petId = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            foreach (var pet in _pets.Where(x => x.Type.Id == petId))
                 Print(
                     $"\n Id: {pet.Id} \n " +
                     $"Name: {pet.Name} \n " +
@@ -121,8 +122,8 @@ namespace bois.PetShop
         private static void ShowPetByTypeName()
         {
             Print("Please Enter Name of Animal Type you Want: ");
-            var name = Console.ReadLine() ?? throw new InvalidOperationException();
-            foreach (var pet in _pets.Where(x => x.Type.Name == name))
+            var petName = Console.ReadLine() ?? throw new InvalidOperationException();
+            foreach (var pet in _pets.Where(x => x.Type.Name == petName))
                 Print(
                     $"\n Id: {pet.Id} \n " +
                     $"Name: {pet.Name} \n " +
@@ -138,8 +139,8 @@ namespace bois.PetShop
 
         private static void FiveCheapestPets()
         {
-            var sortedStuff = _pets.OrderBy(x => x.Price).Take(5);
-            foreach (var pet in sortedStuff)
+            var petSortedStuff = _pets.OrderBy(x => x.Price).Take(5);
+            foreach (var pet in petSortedStuff)
                 Print(
                     $"\n Id: {pet.Id} \n " +
                     $"Name: {pet.Name} \n " +
@@ -155,15 +156,15 @@ namespace bois.PetShop
 
         private void AddPet()
         {
-            Print(StringConstants.PetNameInput);
+            Print(StringConstants.NameInput);
             var petName = Console.ReadLine();
             Clear();
 
-            Print(StringConstants.PetTypeInput);
+            Print(StringConstants.TypeInput);
             var petTypeName = SelectPetType();
             Clear();
 
-            Print(StringConstants.PetBirthDateInput);
+            Print(StringConstants.BirthDateInput);
             Print("Please enter Day:");
             int petBirthdateDay;
             while (!int.TryParse(Console.ReadLine(), out petBirthdateDay)) EnterIntegerPlease();
@@ -179,7 +180,7 @@ namespace bois.PetShop
             while (!int.TryParse(Console.ReadLine(), out petBirthdateYear)) EnterIntegerPlease();
             Clear();
 
-            Print(StringConstants.PetSoldDateInput);
+            Print(StringConstants.SoldDateInput);
             Print("Please enter Day:");
             int petSoldDateDay;
             while (!int.TryParse(Console.ReadLine(), out petSoldDateDay)) EnterIntegerPlease();
@@ -195,11 +196,11 @@ namespace bois.PetShop
             while (!int.TryParse(Console.ReadLine(), out petSoldDateYear)) EnterIntegerPlease();
             Clear();
 
-            Print(StringConstants.PetColorInput);
+            Print(StringConstants.ColorInput);
             var petColor = Console.ReadLine();
             Clear();
 
-            Print(StringConstants.PetPriceInput);
+            Print(StringConstants.PriceInput);
             int petPrice;
             while (!int.TryParse(Console.ReadLine(), out petPrice)) EnterIntegerPlease();
             Clear();
@@ -222,33 +223,49 @@ namespace bois.PetShop
             Print("Please Enter Id of the Pet you want to Edit: ");
             var pet = FindPetById();
             Clear();
-            Print(StringConstants.PetNameInput);
+            Print(StringConstants.NameInput);
             pet.Name = Console.ReadLine();
             Clear();
-            Print(StringConstants.PetTypeInput);
+            Print(StringConstants.TypeInput);
             pet.Type = SelectPetType();
             Clear();
-            Print(StringConstants.PetBirthDateInput);
-            pet.Birthdate = Convert.ToDateTime(Console.ReadLine());
+            Print("Please enter Day:");
+            var petBirthdateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
             Clear();
-            Print(StringConstants.PetSoldDateInput);
-            pet.SoldDate = Convert.ToDateTime(Console.ReadLine());
+            Print("Please enter Month:");
+            var petBirthdateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
             Clear();
-            Print(StringConstants.PetColorInput);
+            Print("Please enter Year:");
+            var petBirthdateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            Clear();
+            var petBirthdate = new DateTime(petBirthdateYear, petBirthdateMonth, petBirthdateDay);
+            pet.Birthdate = petBirthdate;
+            Print("Please enter Day:");
+            var petSoldDateDay = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            Clear();
+            Print("Please enter Month:");
+            var petSoldDateMonth = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            Clear();
+            Print("Please enter Year:");
+            var petSoldDateYear = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+            Clear();
+            var petSoldDate = new DateTime(petSoldDateYear, petSoldDateMonth, petSoldDateDay);
+            pet.SoldDate = petSoldDate;
+            Print(StringConstants.ColorInput);
             pet.Color = Console.ReadLine();
             Clear();
-            Print(StringConstants.PetPriceInput);
+            Print(StringConstants.PriceInput);
             pet.Price = Convert.ToDouble(Console.ReadLine());
             Clear();
         }
 
         private static Pet FindPetById()
         {
-            int id;
-            while (!int.TryParse(Console.ReadLine(), out id))
+            int petId;
+            while (!int.TryParse(Console.ReadLine(), out petId))
                 Print("Please Enter Id of Pet You Want Removed: ");
 
-            return _pets.FirstOrDefault(pet => pet.Id == id);
+            return _pets.FirstOrDefault(pet => pet.Id == petId);
         }
 
         private static void DeletePet()
@@ -258,37 +275,37 @@ namespace bois.PetShop
             Clear();
         }
 
-        private static PetType CreateNewPetType()
+        private static Type CreateNewPetType()
         {
-            var newPetType = new PetType();
+            var petNewPetType = new Type();
             Print(StringConstants.AddPetTypeGreeting);
-            Print(StringConstants.PetTypeNameLine);
-            newPetType.Name = Console.ReadLine();
-            Print($"{newPetType.Name} successfully added.");
+            Print(StringConstants.TypeNameLine);
+            petNewPetType.Name = Console.ReadLine();
+            Print($"{petNewPetType.Name} successfully added.");
             Clear();
-            return newPetType;
+            return petNewPetType;
         }
 
-        private PetType SelectPetType()
+        private Type SelectPetType()
         {
-            int selection;
+            int petSelection;
             do
             {
-                var selectedOption = Console.ReadKey();
+                var petSelectedOption = Console.ReadKey();
                 _petsTypes.ForEach(type => Print(type + "\n"));
 
-                selection = selectedOption.KeyChar - '0';
-                if (selection < 0 || selection > _petsTypes.Count)
+                petSelection = petSelectedOption.KeyChar - '0';
+                if (petSelection < 0 || petSelection > _petsTypes.Count)
                     Print($"Please select an option between 0 - {_petsTypes.Count}");
-            } while (selection < 0 || selection > _petsTypes.Count);
+            } while (petSelection < 0 || petSelection > _petsTypes.Count);
 
             Clear();
-            return _petTypeService.FindById(selection);
+            return _petTypeService.FindById(petSelection);
         }
 
         private static int ShowMenu()
         {
-            string[] menuItems =
+            string[] petMenuItems =
             {
                 StringConstants.AddNewPet,
                 StringConstants.AddNewPetType,
@@ -303,13 +320,13 @@ namespace bois.PetShop
             Print("Welcome To The Pet Shop!\n");
             Print("Select What you want to do:\n");
 
-            for (var i = 0; i < menuItems.Length; i++) Print($"{i + 1}: {menuItems[i]}");
+            for (var petI = 0; petI < petMenuItems.Length; petI++) Print($"{petI + 1}: {petMenuItems[petI]}");
 
-            int selection;
-            while (!int.TryParse(Console.ReadLine(), out selection) || selection is < 1 or > 9)
+            int petSelection;
+            while (!int.TryParse(Console.ReadLine(), out petSelection) || petSelection is < 1 or > 9)
                 Print("Please select a number between 1-9");
             Clear();
-            return selection;
+            return petSelection;
         }
 
 
