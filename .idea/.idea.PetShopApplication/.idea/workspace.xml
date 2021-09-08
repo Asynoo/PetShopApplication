@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/bois.PetShop/Printer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/Printer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/bin/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bois.PetShop/obj/Debug/net5.0/bois.PetShop.pdb" afterDir="false" />
     </list>
@@ -79,7 +78,7 @@
       <workItem from="1631020022770" duration="7039000" />
       <workItem from="1631043028708" duration="3797000" />
       <workItem from="1631084190916" duration="173000" />
-      <workItem from="1631085487280" duration="2704000" />
+      <workItem from="1631085487280" duration="6296000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1629904209169</created>

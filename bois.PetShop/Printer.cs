@@ -22,8 +22,8 @@ namespace bois.PetShop
 
         public void Start()
         {
-            Console.WriteLine("");
-            Console.Clear();
+            Print("");
+            Clear();
             PrinterMenu();
         }
 
@@ -31,47 +31,47 @@ namespace bois.PetShop
         {
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Black;
-        
+
             var selection = ShowMenu();
             while (selection != 10)
             {
-                Console.Clear();
+                Clear();
                 switch (selection)
                 {
                     case 1:
-                        Console.Clear();
+                        Clear();
                         AddPet();
                         break;
                     case 2:
-                        Console.Clear();
+                        Clear();
                         _petTypeService.Add(CreateNewPetType());
                         break;
                     case 3:
-                        Console.Clear();
+                        Clear();
                         EditPet();
                         break;
                     case 4:
-                        Console.Clear();
+                        Clear();
                         DeletePet();
                         break;
                     case 5:
-                        Console.Clear();
+                        Clear();
                         ShowPetByTypeName();
                         break;
                     case 6:
-                        Console.Clear();
+                        Clear();
                         ShowPetByTypeId();
                         break;
                     case 7:
-                        Console.Clear();
+                        Clear();
                         SortAllPetsByPrice();
                         break;
                     case 8:
-                        Console.Clear();
+                        Clear();
                         FiveCheapestPets();
                         break;
                     case 9:
-                        Console.Clear();
+                        Clear();
                         ListAllPets();
                         break;
                 }
@@ -79,116 +79,131 @@ namespace bois.PetShop
                 selection = ShowMenu();
             }
 
-            Console.Clear();
+            Clear();
             Console.ReadLine();
         }
 
         private static void SortAllPetsByPrice()
         {
             var sortedStuff = _pets.OrderBy(x => x.Price);
-            foreach (var pet in sortedStuff) Console.WriteLine(pet);
+            foreach (var pet in sortedStuff)
+                Print(
+                    $"\n Id: {pet.Id} \n " +
+                    $"Name: {pet.Name} \n " +
+                    $"TypeId: {pet.Type.Id} \n " +
+                    $"TypeName: {pet.Type.Name} \n " +
+                    $"Birthdate: {pet.Birthdate.Day + "/" + pet.Birthdate.Month + "/" + pet.Birthdate.Year} \n " +
+                    $"SoldDate: {pet.SoldDate.Day + "/" + pet.SoldDate.Month + "/" + pet.SoldDate.Year} \n " +
+                    $"Color: {pet.Color} \n " +
+                    $"Price: {pet.Price}$ \n");
             Console.ReadLine();
-            Console.Clear();
+            Clear();
         }
 
         private static void ShowPetByTypeId()
         {
-            Console.WriteLine("Please Enter Id of Animal Type you Want: ");
+            Print("Please Enter Id of Animal Type you Want: ");
             var id = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
-            foreach (var pet in _pets.Where(x => x.Type.Id == id)) Console.WriteLine(pet);
+            foreach (var pet in _pets.Where(x => x.Type.Id == id))
+                Print(
+                    $"\n Id: {pet.Id} \n " +
+                    $"Name: {pet.Name} \n " +
+                    $"TypeId: {pet.Type.Id} \n " +
+                    $"TypeName: {pet.Type.Name} \n " +
+                    $"Birthdate: {pet.Birthdate.Day + "/" + pet.Birthdate.Month + "/" + pet.Birthdate.Year} \n " +
+                    $"SoldDate: {pet.SoldDate.Day + "/" + pet.SoldDate.Month + "/" + pet.SoldDate.Year} \n " +
+                    $"Color: {pet.Color} \n " +
+                    $"Price: {pet.Price}$ \n");
             Console.ReadLine();
-            Console.Clear();
+            Clear();
         }
-        
+
         private static void ShowPetByTypeName()
         {
-            Console.WriteLine("Please Enter Name of Animal Type you Want: ");
-            var name = (Console.ReadLine() ?? throw new InvalidOperationException());
-            foreach (var pet in _pets.Where(x => x.Type.Name == name)) Console.WriteLine(pet);
+            Print("Please Enter Name of Animal Type you Want: ");
+            var name = Console.ReadLine() ?? throw new InvalidOperationException();
+            foreach (var pet in _pets.Where(x => x.Type.Name == name))
+                Print(
+                    $"\n Id: {pet.Id} \n " +
+                    $"Name: {pet.Name} \n " +
+                    $"TypeId: {pet.Type.Id} \n " +
+                    $"TypeName: {pet.Type.Name} \n " +
+                    $"Birthdate: {pet.Birthdate.Day + "/" + pet.Birthdate.Month + "/" + pet.Birthdate.Year} \n " +
+                    $"SoldDate: {pet.SoldDate.Day + "/" + pet.SoldDate.Month + "/" + pet.SoldDate.Year} \n " +
+                    $"Color: {pet.Color} \n " +
+                    $"Price: {pet.Price}$ \n");
             Console.ReadLine();
-            Console.Clear();
+            Clear();
         }
 
         private static void FiveCheapestPets()
         {
             var sortedStuff = _pets.OrderBy(x => x.Price).Take(5);
-            foreach (var pet in sortedStuff) Console.WriteLine(pet);
+            foreach (var pet in sortedStuff)
+                Print(
+                    $"\n Id: {pet.Id} \n " +
+                    $"Name: {pet.Name} \n " +
+                    $"TypeId: {pet.Type.Id} \n " +
+                    $"TypeName: {pet.Type.Name} \n " +
+                    $"Birthdate: {pet.Birthdate.Day + "/" + pet.Birthdate.Month + "/" + pet.Birthdate.Year} \n " +
+                    $"SoldDate: {pet.SoldDate.Day + "/" + pet.SoldDate.Month + "/" + pet.SoldDate.Year} \n " +
+                    $"Color: {pet.Color} \n " +
+                    $"Price: {pet.Price}$ \n");
             Console.ReadLine();
-            Console.Clear();
+            Clear();
         }
 
         private void AddPet()
         {
-            Console.WriteLine(StringConstants.PetNameInput);
+            Print(StringConstants.PetNameInput);
             var petName = Console.ReadLine();
-            Console.Clear();
+            Clear();
 
-            Console.WriteLine(StringConstants.PetTypeInput);
+            Print(StringConstants.PetTypeInput);
             var petTypeName = SelectPetType();
-            Console.Clear();
+            Clear();
 
-            Console.WriteLine(StringConstants.PetBirthDateInput);
-            Console.WriteLine("Please enter Day:");
+            Print(StringConstants.PetBirthDateInput);
+            Print("Please enter Day:");
             int petBirthdateDay;
-            while (!int.TryParse(Console.ReadLine(), out petBirthdateDay))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine("Please enter Month:");
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateDay)) EnterIntegerPlease();
+            Clear();
+
+            Print("Please enter Month:");
             int petBirthdateMonth;
-            while (!int.TryParse(Console.ReadLine(), out petBirthdateMonth))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine("Please enter Year:");
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateMonth)) EnterIntegerPlease();
+            Clear();
+
+            Print("Please enter Year:");
             int petBirthdateYear;
-            while (!int.TryParse(Console.ReadLine(), out petBirthdateYear))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine(StringConstants.PetSoldDateInput);
-            Console.WriteLine("Please enter Day:");
+            while (!int.TryParse(Console.ReadLine(), out petBirthdateYear)) EnterIntegerPlease();
+            Clear();
+
+            Print(StringConstants.PetSoldDateInput);
+            Print("Please enter Day:");
             int petSoldDateDay;
-            while (!int.TryParse(Console.ReadLine(), out petSoldDateDay))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine("Please enter Month:");
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateDay)) EnterIntegerPlease();
+            Clear();
+
+            Print("Please enter Month:");
             int petSoldDateMonth;
-            while (!int.TryParse(Console.ReadLine(), out petSoldDateMonth))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine("Please enter Year:");
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateMonth)) EnterIntegerPlease();
+            Clear();
+
+            Print("Please enter Year:");
             int petSoldDateYear;
-            while (!int.TryParse(Console.ReadLine(), out petSoldDateYear))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
-            Console.WriteLine(StringConstants.PetColorInput);
+            while (!int.TryParse(Console.ReadLine(), out petSoldDateYear)) EnterIntegerPlease();
+            Clear();
+
+            Print(StringConstants.PetColorInput);
             var petColor = Console.ReadLine();
-            Console.Clear();
-            
-            Console.WriteLine(StringConstants.PetPriceInput);
+            Clear();
+
+            Print(StringConstants.PetPriceInput);
             int petPrice;
-            while (!int.TryParse(Console.ReadLine(), out petPrice))
-            {
-                EnterIntegerPlease();
-            }
-            Console.Clear();
-            
+            while (!int.TryParse(Console.ReadLine(), out petPrice)) EnterIntegerPlease();
+            Clear();
+
             _pets.Add(new Pet
             {
                 Id = _id++,
@@ -199,39 +214,39 @@ namespace bois.PetShop
                 Color = petColor,
                 Price = Convert.ToDouble(petPrice)
             });
-            Console.Clear();
+            Clear();
         }
 
         private void EditPet()
         {
-            Console.WriteLine("Please Enter Id of the Pet you want to Edit: ");
+            Print("Please Enter Id of the Pet you want to Edit: ");
             var pet = FindPetById();
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetNameInput);
+            Clear();
+            Print(StringConstants.PetNameInput);
             pet.Name = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetTypeInput);
+            Clear();
+            Print(StringConstants.PetTypeInput);
             pet.Type = SelectPetType();
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetBirthDateInput);
+            Clear();
+            Print(StringConstants.PetBirthDateInput);
             pet.Birthdate = Convert.ToDateTime(Console.ReadLine());
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetSoldDateInput);
+            Clear();
+            Print(StringConstants.PetSoldDateInput);
             pet.SoldDate = Convert.ToDateTime(Console.ReadLine());
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetColorInput);
+            Clear();
+            Print(StringConstants.PetColorInput);
             pet.Color = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine(StringConstants.PetPriceInput);
+            Clear();
+            Print(StringConstants.PetPriceInput);
             pet.Price = Convert.ToDouble(Console.ReadLine());
-            Console.Clear();
+            Clear();
         }
 
         private static Pet FindPetById()
         {
             int id;
             while (!int.TryParse(Console.ReadLine(), out id))
-                Console.WriteLine("Please Enter Id of Pet You Want Removed: ");
+                Print("Please Enter Id of Pet You Want Removed: ");
 
             return _pets.FirstOrDefault(pet => pet.Id == id);
         }
@@ -240,17 +255,17 @@ namespace bois.PetShop
         {
             var petFound = FindPetById();
             if (petFound != null) _pets.Remove(petFound);
-            Console.Clear();
+            Clear();
         }
 
         private static PetType CreateNewPetType()
         {
             var newPetType = new PetType();
-            Console.WriteLine(StringConstants.AddPetTypeGreeting);
-            Console.WriteLine(StringConstants.PetTypeNameLine);
+            Print(StringConstants.AddPetTypeGreeting);
+            Print(StringConstants.PetTypeNameLine);
             newPetType.Name = Console.ReadLine();
-            Console.WriteLine($"{newPetType.Name} successfully added.");
-            Console.Clear();
+            Print($"{newPetType.Name} successfully added.");
+            Clear();
             return newPetType;
         }
 
@@ -260,13 +275,14 @@ namespace bois.PetShop
             do
             {
                 var selectedOption = Console.ReadKey();
-                _petsTypes.ForEach(type => Console.Write(type + "\n"));
+                _petsTypes.ForEach(type => Print(type + "\n"));
 
                 selection = selectedOption.KeyChar - '0';
                 if (selection < 0 || selection > _petsTypes.Count)
-                    Console.WriteLine($"Please select an option between 0 - {_petsTypes.Count}");
+                    Print($"Please select an option between 0 - {_petsTypes.Count}");
             } while (selection < 0 || selection > _petsTypes.Count);
-            Console.Clear();
+
+            Clear();
             return _petTypeService.FindById(selection);
         }
 
@@ -284,15 +300,15 @@ namespace bois.PetShop
                 StringConstants.FiveCheapestPets,
                 StringConstants.ShowAllPets
             };
-            Console.WriteLine("Welcome To The Pet Shop!\n");
-            Console.WriteLine("Select What you want to do:\n");
+            Print("Welcome To The Pet Shop!\n");
+            Print("Select What you want to do:\n");
 
-            for (var i = 0; i < menuItems.Length; i++) Console.WriteLine($"{i + 1}: {menuItems[i]}");
+            for (var i = 0; i < menuItems.Length; i++) Print($"{i + 1}: {menuItems[i]}");
 
             int selection;
             while (!int.TryParse(Console.ReadLine(), out selection) || selection is < 1 or > 9)
-                Console.WriteLine("Please select a number between 1-9");
-            Console.Clear();
+                Print("Please select a number between 1-9");
+            Clear();
             return selection;
         }
 
@@ -300,21 +316,31 @@ namespace bois.PetShop
         private static void ListAllPets()
         {
             foreach (var pet in _pets)
-                Console.WriteLine(
+                Print(
                     $"\n Id: {pet.Id} \n " +
                     $"Name: {pet.Name} \n " +
                     $"Type: {pet.Type.Name} \n " +
-                    $"Birthdate: {pet.Birthdate.Day+"/"+pet.Birthdate.Month+"/"+pet.Birthdate.Year} \n " +
-                    $"SoldDate: {pet.SoldDate.Day+"/"+pet.SoldDate.Month+"/"+pet.SoldDate.Year} \n " +
+                    $"Birthdate: {pet.Birthdate.Day + "/" + pet.Birthdate.Month + "/" + pet.Birthdate.Year} \n " +
+                    $"SoldDate: {pet.SoldDate.Day + "/" + pet.SoldDate.Month + "/" + pet.SoldDate.Year} \n " +
                     $"Color: {pet.Color} \n " +
                     $"Price: {pet.Price}$ \n");
             Console.ReadLine();
-            Console.Clear();
+            Clear();
         }
 
         private static void EnterIntegerPlease()
         {
             Console.Write("Please Enter a Number: ");
+        }
+
+        private static void Print(string value)
+        {
+            Console.WriteLine(value);
+        }
+
+        private static void Clear()
+        {
+            Console.Clear();
         }
     }
 }
