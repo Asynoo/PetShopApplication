@@ -2,70 +2,83 @@
 using System.Collections.Generic;
 using bois.PetShopApplication.Core.Models;
 using bois.PetShopApplication.Domain.IRepositories;
+using Type = bois.PetShopApplication.Core.Models.Type;
 
 namespace bois.PetShopApplication.DataAccess.Repositories
 {
-    public class PetRepositoryInMemory : IPetRepository
+    public class RepositoryInMemory : IPetRepository
     {
-        private static List<Pet> _petTable = new()
+        private static readonly List<Pet> Table = new()
         {
             new Pet
             {
-                Id = 1, Color = "Red", Birthdate = DateTime.Now, Name = "Bente", Type = new PetType{Id = 1, Name = "Monkey"},
-                Price = 19, SoldDate = DateTime.Now.AddDays(-15)
+                Id = 1, Color = "Red", Birthdate = DateTime.Now, Name = "Charlie",
+                Type = new Type {Id = 1, Name = "Monkey"},
+                Price = 3, SoldDate = DateTime.Now.AddDays(-15)
             },
             new Pet
             {
-                Id = 4, Color = "Red", Birthdate = DateTime.Now, Name = "Bente1", Type = new PetType{Id = 1, Name = "Monkey"},
-                Price = 19, SoldDate = DateTime.Now.AddDays(-15)
+                Id = 2, Color = "Green", Birthdate = DateTime.Now, Name = "Brad",
+                Type = new Type {Id = 1, Name = "Monkey"},
+                Price = 25, SoldDate = DateTime.Now.AddDays(-15)
             },
             new Pet
             {
-                Id = 5, Color = "Red", Birthdate = DateTime.Now, Name = "Bente2", Type = new PetType{Id = 1, Name = "Monkey"},
-                Price = 19, SoldDate = DateTime.Now.AddDays(-15)
+                Id = 3, Color = "Blue", Birthdate = DateTime.Now, Name = "Wukong",
+                Type = new Type {Id = 1, Name = "Monkey"},
+                Price = 96, SoldDate = DateTime.Now.AddDays(-15)
             },
             new Pet
             {
-                Id = 2, Color = "Blue", Birthdate = DateTime.Now, Name = "Bent", Type = new PetType{Id = 2, Name = "Dog"}, Price = 19,
+                Id = 4, Color = "Yellow", Birthdate = DateTime.Now, Name = "Snoopy",
+                Type = new Type {Id = 2, Name = "Dog"}, Price = 3220,
                 SoldDate = DateTime.Now.AddYears(-15)
             },
             new Pet
             {
-                Id = 6, Color = "Blue", Birthdate = DateTime.Now, Name = "Bent1", Type = new PetType{Id = 2, Name = "Dog"}, Price = 19,
+                Id = 5, Color = "Black", Birthdate = DateTime.Now, Name = "Chip",
+                Type = new Type {Id = 2, Name = "Dog"}, Price = 230,
                 SoldDate = DateTime.Now.AddYears(-15)
             },
             new Pet
             {
-                Id = 7, Color = "Blue", Birthdate = DateTime.Now, Name = "Bent2", Type = new PetType{Id = 2, Name = "Dog"}, Price = 19,
+                Id = 6, Color = "Orange", Birthdate = DateTime.Now, Name = "Chuck",
+                Type = new Type {Id = 2, Name = "Dog"}, Price = 199,
                 SoldDate = DateTime.Now.AddYears(-15)
             },
             new Pet
             {
-                Id = 3, Color = "Green", Birthdate = DateTime.Now, Name = "Ben", Type = new PetType{Id = 3 ,Name = "Cat"},
-                Price = 19, SoldDate = DateTime.Now.AddMilliseconds(-15)
+                Id = 7, Color = "Purple", Birthdate = DateTime.Now, Name = "Jamie",
+                Type = new Type {Id = 3, Name = "Cat"},
+                Price = 169, SoldDate = DateTime.Now.AddMilliseconds(-15)
             },
             new Pet
             {
-                Id = 8, Color = "Green", Birthdate = DateTime.Now, Name = "Ben1", Type = new PetType{Id = 3 , Name = "Cat"},
-                Price = 19, SoldDate = DateTime.Now.AddMilliseconds(-15)
+                Id = 8, Color = "Pink", Birthdate = DateTime.Now, Name = "Evelyn",
+                Type = new Type {Id = 3, Name = "Cat"},
+                Price = 25, SoldDate = DateTime.Now.AddMilliseconds(-15)
             },
             new Pet
             {
-                Id = 9, Color = "Green", Birthdate = DateTime.Now, Name = "Ben2", Type = new PetType{Id = 3 , Name = "Cat"},
-                Price = 19, SoldDate = DateTime.Now.AddMilliseconds(-15)
-            },
+                Id = 9, Color = "Brown", Birthdate = DateTime.Now, Name = "Spirit",
+                Type = new Type {Id = 3, Name = "Cat"},
+                Price = 350, SoldDate = DateTime.Now.AddMilliseconds(-15)
+            }
         };
-        private static int _id = 0;
+
+
+        private static int _id = 9;
+
         public Pet Add(Pet pet)
         {
             pet.Id = _id++;
-            _petTable.Add(pet);
+            Table.Add(pet);
             return pet;
         }
 
         public List<Pet> FindAll()
         {
-            return _petTable;
+            return Table;
         }
     }
 }

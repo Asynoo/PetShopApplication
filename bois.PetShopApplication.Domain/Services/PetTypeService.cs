@@ -5,29 +5,31 @@ using bois.PetShopApplication.Domain.IRepositories;
 
 namespace bois.PetShopApplication.Domain.Services
 {
-    public class PetTypeService : IPetTypeService
+    public class TypeService : IPetTypeService
     {
-        private IPetTypeRepository _repo;
-        public PetTypeService(IPetTypeRepository repo)
+        private readonly IPetTypeRepository _repo;
+
+        public TypeService(IPetTypeRepository repo)
         {
             _repo = repo;
         }
-        public List<PetType> GetPetTypes()
+
+        public List<Type> GetPetTypes()
         {
             return _repo.FindAll();
         }
 
-        public PetType Add(PetType petType)
+        public Type Add(Type type)
         {
-            return _repo.Add(petType);
+            return _repo.Add(type);
         }
-        
-        public PetType FindByName(string name)
+
+        public Type FindByName(string name)
         {
             return GetPetTypes().Find(type => type.Name == name);
         }
 
-        public PetType FindById(int id)
+        public Type FindById(int id)
         {
             return GetPetTypes().Find(type => type.Id == id);
         }

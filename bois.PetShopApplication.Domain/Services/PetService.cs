@@ -5,13 +5,15 @@ using bois.PetShopApplication.Domain.IRepositories;
 
 namespace bois.PetShopApplication.Domain.Services
 {
-    public class PetService : IPetService
+    public class Service : IPetService
     {
-        private IPetRepository _repo;
-        public PetService(IPetRepository repo)
+        private readonly IPetRepository _repo;
+
+        public Service(IPetRepository repo)
         {
             _repo = repo;
         }
+
         public List<Pet> GetPets()
         {
             return _repo.FindAll();

@@ -403,3 +403,14 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+.idea/.idea.PetShopApplication/.idea/workspace.xml
+.idea/.idea.PetShopApplication/.idea/workspace.xml
+bois.PetShop/bois.PetShop.csproj
+bois.PetShop/obj/Debug/net5.0/bois.PetShop.csproj.AssemblyReference.cache
+bois.PetShopApplication.DataAccess/bois.PetShopApplication.DataAccess.csproj
+bois.PetShopApplication.DataAccess/obj/Debug/net5.0/bois.PetShopApplication.DataAccess.csproj.AssemblyReference.cache
+bois.PetShopApplication.Domain/bois.PetShopApplication.Domain.csproj
+bois.PetShopApplication.Domain/obj/Debug/net5.0/bois.PetShopApplication.Domain.csproj.AssemblyReference.cache
+bois.PetShopApplication.SQL/bois.PetShopApplication.SQL.csproj
+*.xml
+*.xml

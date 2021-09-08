@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using bois.PetShopApplication.Core.Models;
 using bois.PetShopApplication.Domain.IRepositories;
 using bois.PetShopApplication.SQL.Converters;
@@ -6,34 +7,28 @@ using bois.PetShopApplication.SQL.Entities;
 
 namespace bois.PetShopApplication.SQL.Repositories
 {
-    public class PetRepository : IPetRepository
+    public class Repository : IPetRepository
     {
-        private static List<PetEntity> _petTable = new List<PetEntity>();
+        private static readonly List<PetEntity> Table = new();
         private static int _id = 1;
-        private readonly PetConverter _petConverter;
+        private readonly Converter _petConverter;
 
-        public PetRepository()
+        public Repository()
         {
-            _petConverter = new PetConverter();
+            _petConverter = new Converter();
         }
 
         public Pet Add(Pet pet)
         {
-            var petEntity = _petConverter.Convert(pet);
+            var petEntity = Converter.Convert(pet);
             petEntity.Id = _id++;
-            _petTable.Add(petEntity);
-            return _petConverter.Convert(petEntity);
+            Table.Add(petEntity);
+            return Converter.Convert(petEntity);
         }
 
         public List<Pet> FindAll()
         {
-            var listOfPets = new List<Pet>();
-            foreach (var petEntity in _petTable)
-            {
-                listOfPets.Add(_petConverter.Convert(petEntity));
-            }
-
-            return listOfPets;
+            return Table.Select(Converter.Convert).ToList();
         }
     }
 }

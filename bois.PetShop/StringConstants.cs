@@ -1,31 +1,26 @@
 ﻿namespace bois.PetShop
 {
-    public class StringConstants
+    public static class StringConstants
     {
-        public static string StartMessage = "Welcome to The Pet Shop";
+        /* Menu Strings*/
+        public const string AddNewPet = "Add a new Pet";
+        public const string AddNewPetType = "New Pet Type";
+        public const string EditPet = "Edit a Pet";
+        public const string DeletePet = "Delete a Pet";
+        public const string ShowAllPets = "Show all Pets";
+        public const string SortPetByPrice = "Sort Pets by Price";
+        public const string SearchPetTypeName = "Search Pet by Type Name";
+        public const string FiveCheapestPets = "See the 5 cheapest available Pets";
+        public const string SearchPetTypeId = "Search Pet by Type Id";
 
-        public static string AddNewPet = "Add a new Pet";
-        public static string EditPet = "Edit a Pet";
-        public static string DeletePet = "Delete a Pet";
-        public static string ShowAllPets = "Show all Pets";
-        public static string SearchPetByPrice = "Sort Pets by Price";
-        public static string FiveCheapestPets = "See the 5 cheapest available Pets";
-        public static string AddNewPetType = "Please Enter New Pet Type";
-        public static string searchPetType = "Search Pet by Type";
-
-        public static string PetNameInput = "Enter Pet Name: ";
-        public static string PetTypeInput = "Enter Pet Type: ";
-        public static string PetBirthDateInput = "Enter Pet Birth Date: ";
-        public static string PetSoldDateInput = "Enter Pet Sold Date: ";
-        public static string PetColorInput = "Enter Pet Color: ";
-        public static string PetPriceInput = "Enter Pet Price: ";
-
-        public static string PrintAllPets = "Here is all your Pets: ";
-        
-        public static string AddPetTypeGreeting = "Add New Pet Type:";
-        public static string PetTypeNameLine = "Please Enter The Type of The Pet:";
-        
-        public static string PetTypeLine = "Please Select your Pet Type:";
-
+        /* Functionality Strings*/
+        public const string NameInput = "Enter Pet Name: ";
+        public const string TypeInput = "Enter Pet Type: ";
+        public const string BirthDateInput = "Enter Pet Birth Date: ";
+        public const string SoldDateInput = "Enter Pet Sold Date: ";
+        public const string ColorInput = "Enter Pet Color: ";
+        public const string PriceInput = "Enter Pet Price: ";
+        public const string AddPetTypeGreeting = "Add New Pet Type:";
+        public const string TypeNameLine = "Please Enter The Type of The Pet:";
     }
 }

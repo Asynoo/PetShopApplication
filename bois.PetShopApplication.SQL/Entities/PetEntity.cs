@@ -1,5 +1,4 @@
 ﻿using System;
-using bois.PetShopApplication.Core.Models;
 
 namespace bois.PetShopApplication.SQL.Entities
 {
