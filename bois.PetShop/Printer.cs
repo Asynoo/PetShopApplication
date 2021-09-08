@@ -85,7 +85,7 @@ namespace bois.PetShop
 
         private static void SortAllPetsByPrice()
         {
-            var sortedStuff = _pets.OrderByDescending(x => x.Price);
+            var sortedStuff = _pets.OrderBy(x => x.Price);
             foreach (var pet in sortedStuff) Console.WriteLine(pet);
             Console.ReadLine();
             Console.Clear();
